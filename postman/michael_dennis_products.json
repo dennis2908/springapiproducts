@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "b55de79e-0c46-4d9f-b839-e233834128a7",
+		"name": "java-spring-products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13814383"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Add Data Users",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis22\",\r\n    \"username\" : \"dennis22\",\r\n    \"email\" : \"dennis22@yahoo.com\",\r\n    \"password\" : \"123456\",\r\n    \"address\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"dateBirth\" : \"1980-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Users",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"dennis22@yahoo.com\",\r\n    \"password\" : \"123456\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"dennis11@yahoo.com\",\r\n    \"password\" : \"123456\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/refresh/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"refresh",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data Users",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis222\",\r\n    \"email\" : \"dennis222@yahoo.com\",\r\n    \"address\" : \"jakarta jakarta jakarta jakarta jakarta timur\",\r\n    \"dateBirth\" : \"1985-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/3352",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"3352"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"email\" : \"dennis@yahoo.com\",\r\n    \"address\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"dateBirth\" : \"1980-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Users By Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"email\" : \"dennis@yahoo.com\",\r\n    \"address\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"dateBirth\" : \"1980-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/findUserByName?name=maman",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"findUserByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "maman"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Users By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"email\" : \"dennis@yahoo.com\",\r\n    \"address\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"dateBirth\" : \"1980-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/1702",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1702"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add Data Products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rackNo\" : {\r\n        \"name\" : \"rack xxxxx\",\r\n        \"roomNo\" : 2\r\n    },\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-09\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gims",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data Products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rack_id\" : 57,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-08\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gims/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gims",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Products",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/gims",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data Products By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rackNo\" : 2,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-09\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gims/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gims",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
