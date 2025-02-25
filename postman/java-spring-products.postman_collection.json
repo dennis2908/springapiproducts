@@ -62,7 +62,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\" : \"dennis22@yahoo.com\",\r\n    \"password\" : \"123456\"\r\n\r\n}"
+							"raw": "{\r\n    \"email\" : \"dennis@yahoo.com\",\r\n    \"password\" : \"123456\"\r\n\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/api/users/login",
@@ -282,6 +282,16 @@
 						}
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NDYxNzUyfQ.PDX1WxzBoKZYGP-NpniY5x7znir3TKMLbkwKpd7NZpk",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -292,7 +302,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rackNo\" : {\r\n        \"name\" : \"rack xxxxx\",\r\n        \"roomNo\" : 2\r\n    },\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-09\"\r\n\r\n}",
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"sku\" : \"sku2\",\r\n    \"image\" : \"sku\",\r\n    \"description\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"price\" : 9000000,\r\n    \"healthcarcat\" : 12\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -322,6 +332,16 @@
 						}
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NDYxNzUyfQ.PDX1WxzBoKZYGP-NpniY5x7znir3TKMLbkwKpd7NZpk",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [
 							{
@@ -332,7 +352,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rack_id\" : 57,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-08\"\r\n\r\n}"
+							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"sku\" : \"sku\",\r\n    \"image\" : \"sku\",\r\n    \"description\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"price\" : 9000000,\r\n    \"healthcarcat\" : 12\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/api/products/1",
@@ -358,6 +378,16 @@
 						}
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NDYxNzUyfQ.PDX1WxzBoKZYGP-NpniY5x7znir3TKMLbkwKpd7NZpk",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -390,6 +420,16 @@
 						}
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NDYxNzUyfQ.PDX1WxzBoKZYGP-NpniY5x7znir3TKMLbkwKpd7NZpk",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -403,7 +443,7 @@
 							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rackNo\" : 2,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-09\"\r\n\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/products/1",
+							"raw": "http://localhost:8080/api/products/53",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -412,7 +452,7 @@
 							"path": [
 								"api",
 								"products",
-								"1"
+								"53"
 							]
 						}
 					},
