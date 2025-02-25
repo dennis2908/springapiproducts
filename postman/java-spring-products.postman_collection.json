@@ -300,7 +300,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/gims",
+							"raw": "http://localhost:8080/api/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -308,7 +308,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"gims"
+								"products"
 							]
 						}
 					},
@@ -335,7 +335,7 @@
 							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rack_id\" : 57,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-08\"\r\n\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/gims/1",
+							"raw": "http://localhost:8080/api/products/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -343,7 +343,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"gims",
+								"products",
 								"1"
 							]
 						}
@@ -367,7 +367,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/api/gims",
+							"raw": "http://localhost:8080/api/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -375,7 +375,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"gims"
+								"products"
 							]
 						}
 					},
@@ -403,7 +403,7 @@
 							"raw": "{\r\n    \"name\" : \"dennis\",\r\n    \"rackNo\" : 2,\r\n    \"publisher\" : \"jakarta jakarta jakarta jakarta jakarta\",\r\n    \"yearPublish\" : \"1980-09-09\"\r\n\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/gims/1",
+							"raw": "http://localhost:8080/api/products/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -411,7 +411,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"gims",
+								"products",
 								"1"
 							]
 						}
