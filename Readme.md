@@ -16,7 +16,7 @@ Untuk auth, tambahkan di table user dengan data : <br/>
 
 email : dennis22@yahoo.com dan password 123456 
 
-![image](https://github.com/user-attachments/assets/4789968d-0796-458c-9595-a535871f8cb7)
+![image](https://github.com/user-attachments/assets/6bf02508-e062-4752-8bd5-8806d0c20945)
 
 ![image](https://github.com/user-attachments/assets/5f166356-710a-4176-a2b4-9595c77e339e)
 
