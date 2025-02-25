@@ -12,4 +12,6 @@ mvn spring-boot:run
 
 Postman : di folder postman. <br/> 
 
-Untuk auth, tambahkan user dengan email : dennis22@yahoo.com dan password 123456 
+Untuk auth, tambahkan di table user dengan data <br/>
+
+email : dennis22@yahoo.com dan password 123456 
