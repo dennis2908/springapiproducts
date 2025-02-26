@@ -99,6 +99,13 @@ public class ProductTests {
                 .andExpect(jsonPath("$.healthcarcat", is(prod.getHealthcarcat())))
                 .andExpect(jsonPath("$.price", is(prod.getPrice())));
 
+                 //pagination
+
+                ResultActions responsePagi = mockMvc.perform(get("/api/products/pagination/1/0"));
+        
+                responsePagi.andExpect(status().isOk())
+                        .andDo(print());        
+
         //Verify delete data
         ResultActions responseDel= mockMvc.perform(delete("/api/products/{id}", prod.getId()));
 
@@ -128,6 +135,17 @@ public class ProductTests {
         assertThat(prodList).isNotNull();
         assertThat(prodList.size()).isGreaterThan(0);
 }
+
+// @Test
+// @Order(3)
+// public void getPagination() throws Exception{
+//         ResultActions responsePagi = mockMvc.perform(get("/api/products/pagination/1/0"));
+
+//         //pagination
+
+//         responsePagi.andExpect(status().isOk())
+//                 .andDo(print());
+// }
 
 // @Test
 //     @Order(3)

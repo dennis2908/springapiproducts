@@ -32,6 +32,20 @@ public class ProductController {
     );
   }
 
+  @GetMapping("/pagination/{limit}/{offset}")
+  // public List<Product> getProducts() {
+  //   return productRepository.findAll();
+  // } 
+  ResponseEntity<Object> getProducts(@PathVariable Long limit, Long offset) {
+    return ResponseHandler.generateResponse(
+      HttpStatus.OK,
+      true,
+      "Success",
+      productRepository.getProduct(limit,offset)
+    );
+  }
+
+
   @GetMapping("/{id}")
   // public Product getProductById(@PathVariable Long id) {
   //   return productRepository.findById(id).get();
