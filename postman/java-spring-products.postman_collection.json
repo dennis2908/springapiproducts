@@ -371,6 +371,50 @@
 					"response": []
 				},
 				{
+					"name": "Get Data Products  Pagination",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NTI5MjA2fQ.OnpKljEAu_jQD7o83J6G-gi5KcrSQ1kO9c94oey7sXk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/pagination/10/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"pagination",
+								"10",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get All Data Products",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {
@@ -383,7 +427,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NDYxNzUyfQ.PDX1WxzBoKZYGP-NpniY5x7znir3TKMLbkwKpd7NZpk",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW5uaXNAeWFob28uY29tIiwiZXhwIjoxOTU2NTI5MjA2fQ.OnpKljEAu_jQD7o83J6G-gi5KcrSQ1kO9c94oey7sXk",
 									"type": "string"
 								}
 							]
