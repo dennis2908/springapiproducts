@@ -36,7 +36,7 @@ public class ProductController {
   // public List<Product> getProducts() {
   //   return productRepository.findAll();
   // } 
-  ResponseEntity<Object> getProducts(@PathVariable Long limit, Long offset) {
+  ResponseEntity<Object> getProducts(@PathVariable Long limit, @PathVariable Long offset) {
     return ResponseHandler.generateResponse(
       HttpStatus.OK,
       true,
